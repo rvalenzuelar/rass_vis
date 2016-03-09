@@ -15,7 +15,6 @@ for r in range(8, 15):
 
     for n, f in enumerate(fs):
         T, Tc, Hgt, timestamp = mf.parse_rass(f)
-        print T.shape
         if n == 0:
             Tstack = T
             ts = np.array(timestamp)
