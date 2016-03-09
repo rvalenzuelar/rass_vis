@@ -41,7 +41,7 @@ def get_thetav(case=None, Tv_array=None, hgt_array=None, homedir=None):
 def get_pressure(case=None, homedir=None):
     from glob import glob
 
-    fpath = '/home/rvalenzuela/SURFACE/case{}/bby*'
+    fpath = homedir + '/SURFACE/case{}/bby*'
     surf_files = glob(fpath.format(str(case).zfill(2)))
     surf_files.sort()
     df_list = []
